@@ -1,0 +1,160 @@
+/* Reset base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #121212;
+  color: #ffffff;
+}
+
+/* Layout general */
+.layout {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  grid-template-rows: 1fr auto;
+  height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  background-color: #000000;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar .logo {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.sidebar nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sidebar nav a {
+  color: #b3b3b3;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.sidebar nav a:hover {
+  color: #1db954;
+}
+
+/* Main content */
+.main {
+  padding: 20px;
+  overflow-y: auto;
+}
+
+/* Buscador */
+.search-bar input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  background-color: #2a2a2a;
+  color: #ffffff;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+/* Sets */
+.sets h2 {
+  font-size: 22px;
+  margin-bottom: 16px;
+}
+
+.sets-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 20px;
+}
+
+.set-card {
+  background-color: #181818;
+  padding: 12px;
+  border-radius: 10px;
+  transition: background 0.2s ease;
+  cursor: pointer;
+}
+
+.set-card:hover {
+  background-color: #282828;
+}
+
+.set-card img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.set-card h3 {
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+.set-card p {
+  font-size: 14px;
+  color: #a7a7a7;
+}
+
+/* Player inferior */
+.player {
+  grid-column: 1 / -1;
+  background-color: #181818;
+  border-top: 1px solid #282828;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.player-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.player-info img {
+  width: 48px;
+  height: 48px;
+  border-radius: 4px;
+}
+
+.track-meta {
+  display: flex;
+  flex-direction: column;
+}
+
+.track-meta span {
+  color: #b3b3b3;
+  font-size: 14px;
+}
+
+.player-controls button {
+  font-size: 20px;
+  margin: 0 10px;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.player-controls .play {
+  color: #1db954;
+}
+
+.player-progress {
+  width: 30%;
+  accent-color: #1db954;
+}
