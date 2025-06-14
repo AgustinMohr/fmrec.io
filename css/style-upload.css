@@ -1,0 +1,93 @@
+.upload-body {
+  background-color: #121212;
+  color: #EEE;
+  font-family: sans-serif;
+  padding: 40px;
+}
+
+.upload-container {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.upload-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+.upload-container input,
+.upload-container button {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+.upload-container button {
+  background-color: #00ADB5;
+  color: white;
+  cursor: pointer;
+}
+
+.preview {
+  text-align: center;
+  background-color: #222831;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.preview img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+.back-button {
+  display: inline-block;
+  margin-bottom: 20px;
+  text-decoration: none;
+  color: #00ADB5;
+  font-weight: bold;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #393E46;
+  color: #EEEEEE;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #222831;
+}
+
+tr:hover {
+  background-color: #222831;
+}
+
+button.edit, button.delete {
+  background-color: transparent;
+  color: #00ADB5;
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+input.edit-input {
+  background-color: #222831;
+  color: white;
+  border: none;
+  padding: 4px;
+  border-radius: 4px;
+}

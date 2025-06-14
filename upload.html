@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Subir música</title>
+  <link rel="stylesheet" href="css/style-upload.css" />
+</head>
+<body class="upload-body">
+<!-- ...dentro de <body> -->
+
+<a href="index.html" class="back-button">← Volver al inicio</a>
+
+<!-- ...form y preview anteriores -->
+
+<h2>🎶 Tus pistas subidas</h2>
+<table id="track-table">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Archivo</th>
+      <th>Artista</th>
+      <th>Duración</th>
+      <th>Acciones</th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>
+
+  <div class="upload-container">
+    <h1>Subí tu track</h1>
+    
+    <form id="upload-form">
+      <label for="artist">Artista/Productor</label>
+      <input type="text" id="artist" />
+
+      <label for="artist">Album</label>
+      <input type="text" id="album" />
+
+       <label for="artist">Nombre del Track</label>
+      <input type="text" id="track-name" />
+
+      <label for="cover">Portada (opcional)</label>
+      <input type="file" id="cover" accept="image/*" />
+
+      <label for="audio">Archivo de audio (.mp3)</label>
+      <input type="file" id="audio" accept="audio/mp3" required />
+
+      <button type="submit">Cargar y reproducir</button>
+    </form>
+
+    <div id="preview" class="preview hidden">
+      <img id="cover-preview" src="" alt="Portada" />
+      <h2 id="artist-name"></h2>
+      <p><strong>Archivo:</strong> <span id="file-name"></span></p>
+      <p><strong>Duración:</strong> <span id="duration"></span></p>
+      <audio id="player" controls></audio>
+    </div>
+  </div>
+
+  <script src="js/upload.js"></script>
+</body>
+</html>
