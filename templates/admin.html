@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Panel de Administración</title>
+  <link rel="stylesheet" href="../css/admin.css">
+</head>
+<body>
+  <h1>🎛️ Panel de Administración</h1>
+
+  <section>
+    <h2>🎵 Subir nueva pista</h2>
+    <form id="trackForm">
+      <input type="text" name="title" placeholder="Título" required />
+      <input type="text" name="artist" placeholder="Artista" required />
+      <input type="file" name="file" accept="audio/mp3" required />
+      <button type="submit">Subir</button>
+    </form>
+  </section>
+
+  <section>
+    <h2>📜 Lista de Pistas</h2>
+    <div id="trackList"></div>
+  </section>
+
+  <hr />
+
+  <section>
+    <h2>👤 Agregar Usuario</h2>
+    <form id="userForm">
+      <input type="text" name="username" placeholder="Nombre de usuario" required />
+      <select name="role">
+        <option value="admin">Admin</option>
+        <option value="editor">Editor</option>
+      </select>
+      <button type="submit">Agregar</button>
+    </form>
+  </section>
+
+  <section>
+    <h2>📋 Lista de Usuarios</h2>
+    <div id="userList"></div>
+  </section>
+
+  <script src="/js/admin.js"></script>
+</body>
+</html>

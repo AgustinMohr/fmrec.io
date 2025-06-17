@@ -1,0 +1,70 @@
+body {
+  font-family: sans-serif;
+  background-color: #f9f9f9;
+  margin: 2rem;
+  color: #333;
+}
+
+h1 {
+  color: #111;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  color: #444;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+form {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+form input,
+form select,
+form button {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+}
+
+form button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+#trackList div,
+#userList div {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 0.75rem;
+  border-radius: 5px;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+audio {
+  margin-left: 1rem;
+  flex-shrink: 0;
+}
