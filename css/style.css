@@ -5,6 +5,8 @@
   box-sizing: border-box;
 }
 
+
+
 /* .logo-strong {
   font-family: "Ultra", serif;
   font-weight: 400;
@@ -45,7 +47,7 @@ body {
 }
 
 .logo-img {
-  width: 6em;    /* Ajustá el tamaño deseado */
+  width: 10rem;    /* Ajustá el tamaño deseado */
   height: auto;    /* Mantiene proporción */
   display: block;
   margin-bottom: 1em;

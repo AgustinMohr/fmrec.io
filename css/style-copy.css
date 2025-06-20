@@ -1,8 +1,31 @@
+ 
+ 
  * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
+
+            /* // Pantallas grandes */
+            @media (max-width: 1400px) {
+            html {
+                font-size: 25px;
+            }
+            }
+
+            /* // Tabletas  */
+            @media (max-width: 768px) {
+            html {
+                font-size: 18px;
+            }
+            }
+
+            /* // Celulares  */
+            @media (max-width: 450px) {
+            html {
+                font-size: 12px;
+            }
+}
 
         body {
             font-family: 'Inter', 'Helvetica Neue', sans-serif;
@@ -16,21 +39,21 @@
         }
 
         img {
-                width: 16em;    /* Ajustá el tamaño deseado */
-                height: auto;    /* Mantiene proporción */
-                display: block;
-                margin-bottom: 1em;
+            display: inline-block;
+            width: 13rem;
+            height: auto;
+            object-fit: cover;             /* Ajusta la imagen sin deformarla */
+                
             
         }
 
         .content-container {
             position: relative;
-            border-color: white;
-
             z-index: 10;
             text-align: center;
             max-width: 600px;
-            padding: 2rem;
+            padding: 10px;
+            margin: 100px;
         }
 
         h1 {
@@ -38,9 +61,7 @@
             font-weight: 800;
             margin-bottom: 1.5rem;
             background: linear-gradient(to right, #fff, #acacac);
-            
             -webkit-background-clip: text;
-            
             -webkit-text-fill-color: transparent;
             text-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
         }
@@ -89,30 +110,42 @@
         }
 
         .sphere-1 {
-            width: 40vw;
-            height: 40vw;
-            background: linear-gradient(350deg, rgba(255, 0, 0, 0.8), rgba(26, 77, 6, 0.4));
-            top: -30%;
-            left: -10%;
-            animation: float-1 15s ease-in-out infinite alternate;
+            width: 30vh;
+            height: 30vh;
+            width: 15rem;
+            height: 16rem;
+            /* background: linear-gradient(350deg, rgba(240, 6, 45, 0.521), rgba(167, 84, 6, 0.432)); */
+            background: #020024;
+            background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+            top: -3vh;
+            left: -2vw;
+            animation: float-1 6s ease-in-out infinite alternate;
         }
 
         .sphere-2 {
-            width: 45vw;
-            height: 45vw;
-            background: linear-gradient(240deg, rgba(96, 3, 202, 0.8), rgba(56, 12, 218, 0.4));
-            bottom: -30%;
-            right: -10%;
-            animation: float-2 18s ease-in-out infinite alternate;
+            width: 50vh;
+            height: 50vh;
+            width: 25rem;
+            height: 25rem;
+            /* background: linear-gradient(240deg, rgba(96, 3, 202, 0.452), rgba(144, 7, 179, 0.493)); */
+            background: #020024;
+            background: linear-gradient(90deg,rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(181, 20, 176, 1) 100%);
+            bottom: -4rem;
+            right: -4rem;
+            animation: float-2 5s ease-in-out infinite alternate;
         }
 
         .sphere-3 {
             width: 30vw;
             height: 30vw;
+            width: 30rem;
+            height: 30rem;
             background: linear-gradient(120deg, rgba(83, 9, 255, 0.932), rgba(8, 244, 252, 0.781));
-            top: 60%;
-            left: 20%;
-            animation: float-3 20s ease-in-out infinite alternate;
+            /* top: 60%;
+            left: 20%; */
+            bottom: -15%;
+            left: 1rem;
+            animation: float-3 5s ease-in-out infinite alternate;
         }
 
         .noise-overlay {
@@ -162,9 +195,9 @@
             width: 100%;
             height: 100%;
             background-size: 40px 40px;
-            background-image: 
+            /* background-image: 
                 linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
-                linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+                linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px); */
             z-index: 2;
         }
 
@@ -177,7 +210,7 @@
             left: 50%;
             transform: translate(-50%, -50%);
             z-index: 2;
-            animation: pulse 8s infinite alternate;
+            animation: pulse 5s infinite alternate;
             filter: blur(30px);
         }
 
